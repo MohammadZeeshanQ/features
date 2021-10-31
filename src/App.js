@@ -1,10 +1,22 @@
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+
+// component
+import NavBar from './Components/NavBar'
+import SideBar from './Components/SideBar'
 
 function App() {
   return (
-    <div className="App">
+    <Router>
+      <NavBar />
+      <SideBar />
+      <Switch>
 
-    </div>
+      </Switch>
+    </Router>
   );
 }
 
